@@ -9,38 +9,57 @@
     <title>MAGICAL FEET</title>
 </head>
 <body>
-    <div class="nav-grid-container">
-        <div class="nav-grid-item">1</div>
-        <div class="nav-grid-item"><button class="openbtn" onclick="triggerNav()">≡</button></div>
-    </div>
-
-    <nav id="mySidepanel" class="sidepanel burger-grid-container">
-        <div href="#">Historie</div>
-        <div href="#">Standorte</div>
-        <div href="#">Ansprechpartner Ampfing</div>
-        <div href="#">Ansprechpartner Filialen</div>
-        <div href="#">Unsere Vertriebspartner</div>
-        <div href="#">Stellenangebote</div>
-        <div href="#">Wir bilden aus</div>
-        <div href="#">Ihr Weg zu uns</div>
-        <div href="#">Newsletter</div>
-        <div href="#">Info-Post</div>
-        <div href="#">AGB's</div>
-        <div href="#">Datenschutzerklärung</div>
-    </nav>
-        
-    <script>
-        var x = document.getElementById("mySidepanel");
-        function triggerNav() {
-            if (x.style.width === "0px") {
-                x.style.width = "200px";
-            } else {
-                x.style.width = "0px";
-            }
-        }
-    </script>
-
-    <h1 class="header">Magical Feet</h1>
-
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect.</p>
+      </div>
+      
+      <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <div></div>
+        <a href="#">☰</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+          <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg"><p>Image</p></div>
+            <div class="fakeimg"><p>Image</p></div>
+            <div class="fakeimg"><p>Image</p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <h2>Footer</h2>
+      </footer>
 </body>
 </html>
