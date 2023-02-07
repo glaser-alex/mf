@@ -1,5 +1,5 @@
-/* -------------------------------- Mobil -------------------------------- */
-@media only screen and (max-width: 419.5px) {
+/* ************************************************************************* */
+/* -------------------------------- Desktop -------------------------------- */
   .sidepanel {
     width: 0;
     z-index: 100;
@@ -11,7 +11,6 @@
     grid-template-columns: auto;
     /* backdrop-filter: blur(10px); */
     position: fixed; right: 0px;
-    font-family: Calibri, sans-serif, Arial;
     /* border: 2px solid #000000; */
   }
 
@@ -25,6 +24,41 @@
     cursor: pointer;
     background-color: transparent;
   }
+
+/* ************************************************************************ */
+/* -------------------------------- Tablet -------------------------------- */
+@media screen and (max-width: 1100px) {
+  .sidepanel {
+    width: 0;
+    z-index: 100;
+    height: 450px;
+    display: grid;
+    transition: 0.5s;
+    overflow-x: hidden;
+    background-color: white;
+    grid-template-columns: auto;
+    /* backdrop-filter: blur(10px); */
+    position: fixed; right: 0px;
+    /* border: 2px solid #000000; */
+  }
+}
+
+/* ************************************************************************ */
+/* -------------------------------- Mobile -------------------------------- */
+@media screen and (max-width: 400px) {
+  .sidepanel {
+    width: 0;
+    z-index: 100;
+    height: 450px;
+    display: grid;
+    transition: 0.5s;
+    overflow-x: hidden;
+    background-color: white;
+    grid-template-columns: auto;
+    position: fixed; right: 0px;
+    /* border: 2px solid #000000; */
+  }
+
   /* **************************** Grid Burger Menu **************************** */
   .burger-grid-container {
 
@@ -54,65 +88,5 @@
     background-color: white;
     border-bottom: solid #ff9dad 0px;
     /* border: 1px solid #000000; */
-  }
-}
-
-/* ************************************************************************ */
-/* -------------------------------- Tablet -------------------------------- */
-@media only screen and (min-width: 420px) and (max-width: 999.5px) {
-  .sidepanel {
-    width: 0;
-    z-index: 100;
-    height: 450px;
-    display: grid;
-    transition: 0.5s;
-    overflow-x: hidden;
-    background-color: white;
-    grid-template-columns: auto;
-    /* backdrop-filter: blur(10px); */
-    position: fixed; right: 0px;
-    font-family: Calibri, sans-serif, Arial;
-    /* border: 2px solid #000000; */
-  }
-
-  .sidepanel div:hover {
-    color: black;
-  }
-
-  .openbtn {
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: transparent;
-  }
-}
-
-/* ************************************************************************ */
-/* -------------------------------- Desktop -------------------------------- */
-@media only screen and (min-width: 1000px) {
-  .sidepanel {
-    width: 0;
-    z-index: 100;
-    height: 450px;
-    display: grid;
-    transition: 0.5s;
-    overflow-x: hidden;
-    background-color: white;
-    grid-template-columns: auto;
-    /* backdrop-filter: blur(10px); */
-    position: fixed; right: 0px;
-    font-family: Calibri, sans-serif, Arial;
-    /* border: 2px solid #000000; */
-  }
-
-  .sidepanel div:hover {
-    color: black;
-  }
-
-  .openbtn {
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: transparent;
   }
 }
