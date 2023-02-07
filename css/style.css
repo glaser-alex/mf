@@ -5,24 +5,24 @@
   body {
     font-family: Arial;
     padding: 10px;
-    background: #f1f1f1;
+    background: white;
   }
   
   /* Header/Blog Title */
   .header {
     padding: 30px;
     text-align: center;
-    background: white;
   }
   
   .header h1 {
     font-size: 50px;
+    color: #ff9dad;
   }
   
   /* Style the top navigation bar */
   .topnav {
+    grid-template-columns: 70px 20% 20% auto 70px;
     display: grid;
-    grid-template-columns: 70px 70px 70px auto 70px;
     overflow: hidden;
     background-color: #333;
     position: sticky; top: 0;
@@ -44,7 +44,7 @@
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
-  .leftcolumn {   
+  .leftcolumn {  
     float: left;
     width: 75%;
   }
@@ -53,8 +53,8 @@
   .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
     padding-left: 20px;
+    background: transparent;
   }
   
   /* Fake image */
@@ -66,9 +66,12 @@
   
   /* Add a card effect for articles */
   .card {
-    background-color: white;
     padding: 20px;
     margin-top: 20px;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 15px #00000036;
+      	    box-shadow: 10px 10px 15px #00000036;
+    background-color: white;
   }
   
   /* Clear floats after the columns */
@@ -91,7 +94,7 @@
   footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #808080;
     margin-top: 20px;
   }
 
@@ -104,6 +107,10 @@
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
+    .topnav {
+      grid-template-columns: 70px 70px 70px auto 70px;
+    }
+
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
