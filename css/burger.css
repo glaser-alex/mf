@@ -1,0 +1,52 @@
+/* -------------------------------- Mobil -------------------------------- */
+@media only screen and (max-width: 419.5px) {
+  .sidepanel {
+    width: 0;
+    z-index: 100;
+    transition: 0.5s;
+    overflow-x: hidden;
+    background-color: white;
+    /* backdrop-filter: blur(10px); */
+    position: absolute; top: 35px; right: 0;
+    font-family: Calibri, sans-serif, Arial;
+  }
+
+  .sidepanel a {
+    display: block;
+    font-size: 25px;
+    color: #818181;
+    text-align: right;
+    text-decoration: none;
+    padding: 55px 20px 0 30px;
+  }
+
+  .sidepanel a:hover {
+    color: black;
+  }
+
+  .openbtn {
+    border: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+  }
+}
+
+/* ************************************************************************ */
+/* -------------------------------- Tablet -------------------------------- */
+@media only screen and (min-width: 420px) and (max-width: 999.5px) {
+
+}
+
+/* ************************************************************************ */
+/* -------------------------------- Desktop -------------------------------- */
+@media only screen and (min-width: 1000px) {
+  .sidepanel  {
+    display: none;
+  }
+
+  .openbtn {
+    display: none;
+  }
+}
