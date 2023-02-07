@@ -9,32 +9,27 @@
     <title>Gruber</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-item1">1</div>
-        <div class="grid-item2">
-            <button class="openbtn" onclick="triggerNav()">≡</button>
-        </div>
-      </div>
-    <div class="left-colomn">
+    <div class="nav-grid-container">
+        <div class="nav-grid-item">1</div>
+        <div class="nav-grid-item"><button class="openbtn" onclick="triggerNav()">≡</button></div>
+    </div>
 
-        <nav id="mySidepanel" class="sidepanel nav">
-            <ul>
-                <li href="#">Historie</li>
-                <li href="#">Standorte</li>
-                <li href="#">Ansprechpartner Ampfing</li>
-                <li href="#">Ansprechpartner Filialen</li>
-                <li href="#">Unsere Vertriebspartner</li>
-                <li href="#">Stellenangebote</li>
-                <li href="#">Wir bilden aus</li>
-                <li href="#">Ihr Weg zu uns</li>
-                <li href="#">Newsletter</li>
-                <li href="#">Info-Post</li>
-                <li href="#">AGB's</li>
-                <li href="#">Datenschutzerklärung</li>
-            </ul>
-        </nav>
+    <nav id="mySidepanel" class="sidepanel burger-grid-container">
+        <div href="#">Historie</div>
+        <div href="#">Standorte</div>
+        <div href="#">Ansprechpartner Ampfing</div>
+        <div href="#">Ansprechpartner Filialen</div>
+        <div href="#">Unsere Vertriebspartner</div>
+        <div href="#">Stellenangebote</div>
+        <div href="#">Wir bilden aus</div>
+        <div href="#">Ihr Weg zu uns</div>
+        <div href="#">Newsletter</div>
+        <div href="#">Info-Post</div>
+        <div href="#">AGB's</div>
+        <div href="#">Datenschutzerklärung</div>
+    </nav>
         
-        <script>
+    <script>
         var x = document.getElementById("mySidepanel");
         function triggerNav() {
             if (x.style.width === "0px") {
@@ -43,9 +38,7 @@
                 x.style.width = "0px";
             }
         }
-        </script>
-
-    </div>
+    </script>
 
 </body>
 </html>

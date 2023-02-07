@@ -16,54 +16,36 @@
         -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
     }
-    .grid-container {
+    .nav-grid-container {
         padding: 0;
         display: grid;
         position: sticky; top: 0;
         grid-template-columns: 90% auto;
     }
-    .grid-item1 {
+    .nav-grid-item {
         padding: 0;
         text-align: left;
         background-color: white;
         border: 1px solid #000000;
     }
-    .grid-item2 {
+    /* **************************** Grid Burger Menu **************************** */
+    .burger-grid-container {
         padding: 0;
-        text-align: center;
-        background-color: white;
-        border: 1px solid #000000;
-    }
-
-    nav {
-        height: fit-content;
+        display: grid;
+        position: sticky; top: 0;
+        grid-template-columns: auto;
         border: solid black 2px;
     }
-
-    .nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .nav li {
+    .burger-grid-container div {
         padding: 7px 0;
         cursor: pointer;
         color: #696969;
+        text-align: right;
+        background-color: white;
         border-top: solid #ff9dad 2px;
+        border: 1px solid #000000;
     }
-
-    .nav li:hover {
-        color: black;
-    }
-
-    .nav li:first-child {
-        border: none;
-        padding: 0 0 5px 0;
-    }
-
-    .nav li:last-child {
-        padding: 5px 0 0 0;
+    .burger-grid-item1 {
     }
 }
 
