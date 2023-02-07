@@ -1,10 +1,11 @@
+/* ********************************* Desktop ********************************* */
 * {
     box-sizing: border-box;
   }
   
   body {
     font-family: Arial;
-    padding: 10px;
+    padding: 20px;
     background: white;
   }
   
@@ -21,19 +22,22 @@
   
   /* Style the top navigation bar */
   .topnav {
-    grid-template-columns: 70px 20% 20% auto 70px;
+    grid-template-columns: 45px 20% 20% auto 70px;
     display: grid;
     overflow: hidden;
     background-color: #333;
-    position: sticky; top: 0;
   }
-  
+
   /* Style the topnav links */
   .topnav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 20px;
+    padding-top: 23px;
     text-decoration: none;
+  }
+
+  .topnav button {
+    padding: 0;
   }
   
   /* Change color on hover */
@@ -53,7 +57,7 @@
   .rightcolumn {
     float: left;
     width: 25%;
-    padding-left: 20px;
+    padding-left: 50px;
     background: transparent;
   }
   
@@ -67,10 +71,10 @@
   /* Add a card effect for articles */
   .card {
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 25px;
-    -webkit-box-shadow: 10px 10px 15px #00000036;
-      	    box-shadow: 10px 10px 15px #00000036;
+    margin-top: 50px;
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 20px #00000036;
+      	    box-shadow: 10px 10px 20px #00000036;
     background-color: white;
   }
   
@@ -88,14 +92,14 @@
     background: linear-gradient(120deg,#ffc100,#ff1f25,#b100a3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
- }
+  }
  
   /* Footer */
   footer {
     padding: 20px;
     text-align: center;
     background: #808080;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   #insta-footer{
@@ -105,19 +109,19 @@
     background: transparent;
 }
 
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .topnav {
-      grid-template-columns: 70px 70px 70px auto 70px;
-    }
-
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .topnav {
+    grid-template-columns: 70px 70px 70px auto 70px;
+    position: sticky; top: 0;
   }
+
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-
-  }
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+}
