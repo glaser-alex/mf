@@ -9,6 +9,11 @@
     background: white;
   }
   
+  label {
+    display: inline-block;
+    width: 8em;
+  }
+
   /* Header/Blog Title */
   .header {
     padding: 30px;
