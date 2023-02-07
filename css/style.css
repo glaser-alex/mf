@@ -62,11 +62,12 @@
     background: transparent;
   }
   
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
+  /* image */
+  .image {
     width: 100%;
-    padding: 20px;
+    padding: 13%;
+    text-align: center;
+    background-color: #aaa;
   }
   
   /* Add a card effect for articles */
@@ -86,6 +87,11 @@
     clear: both;
   }
   
+  /* Pinke schrift */
+  .pink {
+    color: #ff8499;
+  }
+
   /* ----------------------- Linear gradiant für insta --------------------- */
   .gradient-insta {
     width: fit-content;
