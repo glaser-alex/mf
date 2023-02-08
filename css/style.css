@@ -79,7 +79,7 @@
     width: 100%;
     padding: 13%;
     text-align: center;
-    background-color: #aaa;
+    background-color: #bccfcf;
   }
   
   /* Add a card effect for articles */
@@ -160,7 +160,7 @@
   
 /* ************************************************************************ */
 /* -------------------------------- Mobile -------------------------------- */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
   /* Inhalt von Header p */
   .header div::after {

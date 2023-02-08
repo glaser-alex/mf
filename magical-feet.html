@@ -24,8 +24,8 @@
         <div></div>
         <a onclick="triggerNav()"><button class="openbtn">☰</button></a>
     </div>
-    <nav id="mySidepanel" class="burger-grid-container sidepanel">
-        <ul>
+    <nav id="mySidepanel" class="sidepanel">
+        <div class="burger-grid-container">
             <div>Historie</div>
             <div>Standorte</div>
             <div>Ansprechpartner Ampfing</div>
@@ -38,14 +38,14 @@
             <div>Info-Post</div>
             <div>AGB's</div>
             <div>Datenschutzerklärung</div>
-        </ul>
+        </div>
     </nav>
     
       <script>
         var x = document.getElementById("mySidepanel");
         function triggerNav() {
           if (x.style.width === "0px") {
-            x.style.width = "180px";
+            x.style.width = "250px";
           } else {
             x.style.width = "0px";
           }
