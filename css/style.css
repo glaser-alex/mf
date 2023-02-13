@@ -5,8 +5,10 @@
   }
   
   body {
-    font-family: Arial;
+    border: 0;
+    margin: 0;
     padding: 20px;
+    font-family: Arial;
     background: white;
   }
   
@@ -30,33 +32,6 @@
   /* Inhalt von Header p */
   .header div::after {
     content: "Desktop";
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    display: grid;
-    overflow: hidden;
-    background-color: #333;
-    grid-template-columns: 100px 100px 100px auto 50px;
-  }
-
-  /* Style the topnav links */
-  .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-  }
-
-  .topnav button {
-    padding: 0;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    cursor: pointer;
-    color: black;
-    background-color: #ff9dad;
   }
   
   /* Create two unequal columns that floats next to each other */
@@ -142,11 +117,6 @@
     content: "Tablet";
   }
 
-  .topnav {
-    position: sticky; top: 0;
-    grid-template-columns: 70px 70px 70px auto 50px;
-  }
-
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
@@ -167,9 +137,8 @@
     content: "Mobile";
   }
 
-    /* About Me text */
-    #aboutMe p{
-      font-size: 10px;
-    }
-
+  /* About Me text */
+  #aboutMe p{
+    font-size: 10px;
+  }
 }
