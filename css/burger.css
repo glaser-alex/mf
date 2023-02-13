@@ -13,7 +13,7 @@
 
 .top-nav li:hover {
   cursor: pointer;
-  background-color: #ff9dad;
+  background-color: #ff9dad50;
 }
 
 .menu {
@@ -90,6 +90,9 @@
     justify-content: center;
     box-shadow: 10px 10px 20px #00000050;
     position: absolute; top: 324px; left: 20px; right: 20px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-color: #ffffff50;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -113,7 +116,6 @@
     padding: 0.5em 0;
     width: 100%;
     color: #000;
-    background-color: #fff;
   }
   #menu-toggle:checked ~ .menu li:last-child {
     border-bottom: 0;
