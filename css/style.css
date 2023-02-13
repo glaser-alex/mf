@@ -87,8 +87,8 @@
   /* ----------------------- Linear gradiant für insta --------------------- */
   .gradient-insta {
     width: fit-content;
-    filter: brightness(150%);
-    background: linear-gradient(120deg,#ffc100,#ff1f25,#b100a3);
+    filter: brightness(125%);
+    background: linear-gradient(120deg,#e0b637,#ff1f25,#b100a3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
