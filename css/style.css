@@ -53,7 +53,8 @@
   
   /* image */
   .image {
-    width: 100%;
+    /* width: 100%; */ /* <----------------| */
+    width: 0%; /* <-- Das löschen und das -| einkommentieren */
     text-align: center;
     background-color: #bccfcf;
   }
