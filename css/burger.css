@@ -89,9 +89,7 @@
     justify-content: center;
     box-shadow: 10px 10px 20px #00000050;
     position: absolute; top: 324px; left: 20px; right: 20px;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    background-color: #ffffff50;
+    background-color: #ffffff;
   }
   #menu-toggle ~ .menu a {
     height: 0;
